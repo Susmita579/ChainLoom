@@ -29,7 +29,8 @@ contract ChainLoom {
         modules[name] = newModuleAddress;
         emit ModuleUpdated(name, newModuleAddress);
     }
- 
+
+
     function getModule(bytes32 name) external view returns (address) {
         return modules[name];
     }
