@@ -6,7 +6,6 @@ contract ChainLoom {
     address public owner;
     mapping(bytes32 => address) public modules;
 
-
     event ModuleRegistered(bytes32 indexed name, address indexed moduleAddress);
     event ModuleUpdated(bytes32 indexed name, address indexed newModuleAddress);
 
